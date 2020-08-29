@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-5">
+      <ul>
+        {% for item in site.data.navigation %}
+          <li><a class="text-secondary" href="{{ item.link }}"><h3>{{ item.name }}</h3></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-lg-7">
+      <h4>GET IN TOUCH</h4>
+      <div class="d-flex">
+        <div class="mr-4">
+          <p class="mb-0">Dave Robertson</p>
+          <p class="mb-0">Treasurer</p>
+          <p>01394 270535</p>
+        </div>
+        <div>
+          <p class="mb-0">Garry Hemsworth</p>
+          <p class="mb-0">Chairman</p>
+          <p>01394 448561</p>
+        </div>
+      </div>
+
+      <h4>OUR LOCATION</h4>
+      <p>Tuesday nights at 7.30pm.</p>
+      <p>Felixstowe Seafarers Centre, Dock Road, Felixstowe Docks, IP11 3TG.</p>
+
+      <h4>SOCIAL</h4>
+
+    </div>
+  </div>
+</div>

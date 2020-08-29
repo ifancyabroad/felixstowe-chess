@@ -1,19 +1,14 @@
 <div class="container">
-  <nav class="navbar navbar-expand-md navbar-light">
-    <a class="navbar-brand" href="{{ '/' | relative_url}}">
-      <!-- <img src="{{ 'assets/logos/vasby_logo_pink.svg' | relative_url }}" width="120" alt="Vasby"> -->
+  <nav class="d-flex justify-content-between py-5">
+    <a href="{{ '/' | relative_url}}">
+      <img src="{{ 'assets/images/Felixstowe Chess Club Logo.svg' | relative_url }}" alt="Felixstowe Chess Club" width="118">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        {% for item in site.data.navigation %}
-          <li class="nav-item {% if page.url == item.link %}active{% endif %}">
-            <a class="nav-link transition" href="{{ item.link | relative_url }}">{{ item.name }} {% if page.url == item.link %}<span class="sr-only">(current)</span>{% endif %}</a>
-          </li>
-        {% endfor %}
-      </ul>
+
+    <div class="d-flex align-items-center">
+      <h4 class="text-primary mb-0">MENU</h4>
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
     </div>
   </nav>
 </div>

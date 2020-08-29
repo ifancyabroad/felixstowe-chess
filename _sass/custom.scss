@@ -1,3 +1,41 @@
 // Bootstrap variable overrides
+$enable-responsive-font-sizes: true;
+
+$primary: #d17c78;
+$secondary: #121737;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ff7200;
+$danger: #dc3545;
+$light: #f3cdc4;
+$dark: #231f20;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
 $body-bg: #fff;
-$body-color: #3f404b;
+$body-color: $secondary;
+
+$link-decoration: none;
+$link-hover-decoration: none;
+
+$font-family-sans-serif: "Recoleta", sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1.125rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-xl: $font-size-base * 1.5;
+$h1-font-size: $font-size-base * 14.75;
+$h2-font-size: $font-size-base * 8.5;
+$h3-font-size: $font-size-base * 5.5;
+$h4-font-size: $font-size-base * 2.5;
+
+$headings-font-family: "Wheat", sans-serif;
