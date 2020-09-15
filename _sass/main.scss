@@ -20,15 +20,27 @@ header {
   .main-title-image {
     position: relative;
     top: -100px;
-    max-width: 740px;
+    max-width: 689px;
     margin-left: auto;
     margin-bottom: -180px;
     z-index: 2;
+
+    .rectangle-striped {
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+    }
+
+    .chess-board {
+      position: relative;
+      z-index: 1;
+    }
 
     .circle-dashed {
       position: absolute;
       top: 12%;
       left: -140px;
+      z-index: 2;
     }
   }
 }
@@ -42,8 +54,16 @@ header {
   
     .the-club-logo {
       position: absolute;
-      top: -48px;
-      left: -97px;
+      top: -80px;
+      left: -150px;
+      z-index: -1;
+
+      .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }
@@ -53,17 +73,8 @@ header {
   padding-bottom: 100px;
 
   .join-us-image {
-    height: 660px;
     width: 90%;
-    overflow: hidden;
     margin: auto;
-    clip-path: polygon(0% 9%, 3% 6%, 8% 4%, 14% 3%, 57% 0%, 70% 0%, 80% 1%, 89% 3%, 93% 6%, 95% 11%, 97% 20%, 100% 46%, 100% 75%, 98% 92%, 96% 95%, 92% 97%, 88% 98%, 76% 99%, 51% 100%, 19% 100%, 13% 99%, 6% 98%, 4% 96%, 1% 93%, 0% 52%);
-  
-    img {
-      height: 100%;
-      width: auto;
-      transform: translateX(-25%);
-    }
   }
 }
 
