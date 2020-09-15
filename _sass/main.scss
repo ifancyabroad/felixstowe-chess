@@ -12,7 +12,7 @@ header {
 
   .main-title {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     max-width: 670px;
     line-height: 0.9;
   }
@@ -22,19 +22,39 @@ header {
     top: -100px;
     max-width: 740px;
     margin-left: auto;
-    margin-bottom: -180px; 
+    margin-bottom: -180px;
+    z-index: 2;
+
+    .circle-dashed {
+      position: absolute;
+      top: 12%;
+      left: -140px;
+    }
   }
+}
+
+.bg-shape {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  z-index: 1;
 }
 
 .section-margin {
   margin-bottom: 200px;
 }
 
-.the-club-logo {
-  position: absolute;
-  top: -48px;
-  left: -97px;
+.the-club-content {
+  position: relative;
+  z-index: 2;
+
+  .the-club-logo {
+    position: absolute;
+    top: -48px;
+    left: -97px;
+  }
 }
+
 
 .join-us-image {
   height: 660px;
