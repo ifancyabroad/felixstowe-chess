@@ -1,0 +1,30 @@
+.contact {
+  padding-top: 0;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 1;
+
+  .image-gallery {
+    display: flex;
+    margin-top: -100px;
+    margin-bottom: 100px;
+
+    .gallery-image {
+      width: 25%;
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  .contact {
+    
+    .image-gallery {
+      margin-bottom: 20px;
+
+      .gallery-image {
+        width: 100%;
+      }
+    }
+  }
+}

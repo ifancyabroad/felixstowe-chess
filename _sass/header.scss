@@ -1,0 +1,62 @@
+header {
+  margin-bottom: 200px;
+
+  .main-title {
+    position: relative;
+    z-index: 3;
+    max-width: 670px;
+    line-height: 0.9;
+  }
+  
+  .main-title-image {
+    position: relative;
+    top: -100px;
+    max-width: 689px;
+    margin-left: auto;
+    margin-bottom: -180px;
+    z-index: 2;
+
+    .rectangle-striped {
+      position: absolute;
+      right: -20px;
+      bottom: -20px;
+    }
+
+    .chess-board {
+      position: relative;
+      z-index: 1;
+    }
+
+    .circle-dashed {
+      position: absolute;
+      top: 12%;
+      left: -140px;
+      z-index: 2;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+
+  header {
+    margin-bottom: 300px;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  header {
+    
+    .main-title-image {
+      top: -40px;
+      width: 80%;
+      margin-right: auto;
+
+      .circle-dashed {
+        width: 120px;
+        left: -40px;
+      }
+    }
+
+  }
+}

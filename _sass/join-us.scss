@@ -1,0 +1,23 @@
+.join-us {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .join-us-image {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  .join-us {
+    color: $light;
+    padding-top: 20px;
+    padding-bottom: 0;
+
+    .join-us-image {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}

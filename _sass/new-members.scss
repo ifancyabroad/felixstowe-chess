@@ -1,0 +1,27 @@
+.bg-shape-second {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.new-members {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  overflow: hidden;
+
+  .filled-circle {
+    z-index: 2;
+    background-color: rgba($primary, 0.4);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    width: 265px;
+    height: 265px;
+  }
+}
+
+.come-along {
+  font-size: 30px;
+}

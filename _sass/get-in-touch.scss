@@ -1,0 +1,25 @@
+.get-in-touch {
+  padding-top: 150px;
+  padding-bottom: 230px;
+  position: relative;
+  z-index: 1;
+
+  .dotted-circle {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .divider {
+    max-width: 100px;
+    margin: auto;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  .get-in-touch {
+    padding-bottom: 130px;
+  }
+}
