@@ -1,3 +1,14 @@
+html, body {
+  overflow-x: hidden;
+}
+
+@include media-breakpoint-only(xs) {
+
+  body {
+    background-color: $secondary;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -45,6 +56,31 @@ header {
   }
 }
 
+@include media-breakpoint-down(lg) {
+
+  header {
+    margin-bottom: 300px;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  header {
+    
+    .main-title-image {
+      top: -40px;
+      width: 80%;
+      margin-right: auto;
+
+      .circle-dashed {
+        width: 120px;
+        left: -40px;
+      }
+    }
+
+  }
+}
+
 .the-club {
   padding-bottom: 100px;
 
@@ -68,6 +104,29 @@ header {
   }
 }
 
+@include media-breakpoint-down(lg) {
+
+  .the-club {
+  
+    .the-club-content {
+    
+      .the-club-logo {
+        position: absolute;
+        top: -140px;
+        left: -100px;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  .the-club {
+    padding-bottom: 20px;
+  }
+}
+
 .join-us {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -75,6 +134,20 @@ header {
   .join-us-image {
     width: 90%;
     margin: auto;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  .join-us {
+    color: $light;
+    padding-top: 20px;
+    padding-bottom: 0;
+
+    .join-us-image {
+      width: 100%;
+      margin: auto;
+    }
   }
 }
 
@@ -115,6 +188,13 @@ header {
   }
 }
 
+@include media-breakpoint-only(xs) {
+
+  .get-in-touch {
+    padding-bottom: 130px;
+  }
+}
+
 .contact {
   padding-top: 0;
   padding-bottom: 60px;
@@ -122,8 +202,27 @@ header {
   z-index: 1;
 
   .image-gallery {
-    position: relative;
-    top: -100px;
+    display: flex;
+    margin-top: -100px;
+    margin-bottom: 100px;
+
+    .gallery-image {
+      width: 25%;
+    }
+  }
+}
+
+@include media-breakpoint-only(xs) {
+
+  .contact {
+    
+    .image-gallery {
+      margin-bottom: 20px;
+
+      .gallery-image {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -133,7 +232,6 @@ header {
 
 .bg-shape-first {
   position: absolute;
-  z-index: 1;
   bottom: 0;
   right: 50%;
 }
@@ -142,4 +240,12 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@include media-breakpoint-only(xs) {
+
+  .bg-shape-first {
+    top: -300px;
+    left: -500px;
+  }
 }
