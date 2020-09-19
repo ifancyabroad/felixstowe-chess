@@ -2,142 +2,17 @@
 layout: default
 title: Home
 ---
-<header class="bg-secondary">
-  {% include navigation.html %}
-
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1 class="main-title mx-auto text-center text-primary">FELIXSTOWE CHESS CLUB</h1>
-        <div class="main-title-image">
-          <img class="img-fluid rectangle-striped" src="{{ 'assets/images/header_image_bg.png' | relative_url }}" alt="Striped pattern border">
-          <img class="img-fluid chess-board" src="{{ 'assets/images/header_image.jpg' | relative_url }}" alt="Chess board">
-          <img class="circle-dashed" src="{{ 'assets/images/circle-dashed.png' | relative_url }}" alt="Circle dashed" width="184">
-        </div>
-      </div>
-    </div>
+{% include header.html %}
+{% include the-club.html %}
+{% include join-us.html %}
+{% include new-members.html %}
+{% include get-in-touch.html %}
+{% include contact.html %}
+<div class="menu-modal">
+  <div class="close-menu">
+    <img class="img-fluid" src="{{ 'assets/images/circle-dashed.png' | relative_url }}" alt="Close menu">
+    <img class="close-icon" src="{{ 'assets/images/cross_icon.png' | relative_url }}" alt="Close menu">
   </div>
-</header>
-
-<section id="the-club" class="the-club position-relative">
-  <div class="bg-shape-first">
-    <img src="{{ 'assets/images/bg_shape.png' | relative_url }}" alt="Background shape">
-  </div>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-8 col-lg-4">
-        <div class="the-club-content">
-          <div class="the-club-logo">
-            <img src="{{ 'assets/images/circle-dashed.png' | relative_url }}" alt="Circle dashed" width="186">
-            <img class="logo" src="{{ 'assets/images/Felixstowe Chess Club Logo.svg' | relative_url }}" alt="Felixstowe Chess Club" width="97">
-          </div>
-          <h2 class="mb-0">THE CLUB</h2>
-          <div class="divider mb-3">
-            <img class="img-fluid" src="{{ 'assets/images/divider_dark.png' | relative_url }}" alt="Divider">
-          </div>
-          <p>Welcome to the official home page of Felixstowe Chess Club. A big site for a small club! The club was founded on October 16th 1945.</p>
-          <p>Seventeen people attended a meeting held at Felixstowe Secondary School. Dr. Johnston was elected to the chair and Mr. E. R. Springham was elected as Hon. Secretary & Treasurer.</p>  
-          <p>It was proposed by Mr. Herring and seconded by Mr. Goose that the club be called "Felixstowe Chess Club".</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="join-us" class="join-us">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-10 col-lg-6 mb-4 mb-sm-0">
-        <div class="join-us-image">
-          <img class="img-fluid" src="{{ 'assets/images/large_02.png' | relative_url }}" alt="Photo of Felixstowe chess club">
-        </div>
-      </div>
-      <div class="col-8 col-lg-4">
-        <div class="join-us-content">
-          <h2 class="mb-0">JOIN US</h2>
-          <div class="divider mb-3">
-            <img class="img-fluid" src="{{ 'assets/images/divider_light.png' | relative_url }}" alt="Divider">
-          </div>
-          <p>Felixstowe Chess club meets on Tuesday evenings at the Royal British Legion Club normally from 7.30pm until around 10.00 o’clock. We play friendly chess and hold club tournaments from time to time. We currently have two teams entered in to the Suffolk Chess League.</p>
-          <p>The season runs from about October to April the following year. All new members are welcome regardless of their playing strength.</p>
-          <p>We expect only two things:  A love of the game and a willingness to learn.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="new-members position-relative text-center">
-  <div class="bg-shape-second">
-    <img src="{{ 'assets/images/bg_shape.png' | relative_url }}" alt="Background shape">
-  </div>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <p class="come-along mb-4">All new members are welcome, so please come along if you are interested.</p>
-        <div class="divider">
-          <img class="img-fluid" src="{{ 'assets/images/divider_blue.png' | relative_url }}" alt="Divider">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="filled-circle"></div>
-</section>
-
-<section class="get-in-touch bg-secondary text-center">
-  <div class="dotted-circle">
-    <img class="img-fluid" src="{{ 'assets/images/dotted_circle.png' | relative_url }}" alt="Dotted circle">
-  </div>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-5">
-        <h2 class="text-primary">GET IN TOUCH</h2>
-        <p class="text-light">If you want to learn the game of chess, or to improve your play then get in touch with us and come along to one of our club nights.</p>
-        <div class="d-flex justify-content-between">
-          <div>
-            <h5 class="text-primary">DAVE ROBERTSON</h5>
-            <p class="text-light mb-0">012345 678910</p>
-            <div class="divider">
-              <img class="img-fluid" src="{{ 'assets/images/divider_dark.png' | relative_url }}" alt="Divider">
-            </div>
-          </div>
-          <div>
-            <h5 class="text-primary">GARRY HEMSWORTH</h5>
-            <p class="text-light mb-0">01394 448561</p>
-            <div class="divider">
-              <img class="img-fluid" src="{{ 'assets/images/divider_dark.png' | relative_url }}" alt="Divider">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="contact bg-primary text-secondary">
-
-  <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col">
-        <div class="image-gallery">
-          <div class="gallery-image p-1 d-none d-sm-block">
-            <img class="img-fluid" src="{{ 'assets/images/image_01.png' | relative_url }}" alt="Chess board">
-          </div>
-          <div class="gallery-image p-1">
-            <img class="img-fluid" src="{{ 'assets/images/image_02.png' | relative_url }}" alt="Chess board">
-          </div>
-          <div class="gallery-image p-1 d-none d-sm-block">
-            <img class="img-fluid" src="{{ 'assets/images/image_03.png' | relative_url }}" alt="Chess board">
-          </div>
-          <div class="gallery-image p-1 d-none d-sm-block">
-            <img class="img-fluid" src="{{ 'assets/images/image_05.png' | relative_url }}" alt="Chess board">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   {% include menu.html %}
-</section>
-
+</div>
 {% include footer.html %}
