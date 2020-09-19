@@ -8,11 +8,5 @@ title: Home
 {% include new-members.html %}
 {% include get-in-touch.html %}
 {% include contact.html %}
-<div class="menu-modal">
-  <div class="close-menu">
-    <img class="img-fluid" src="{{ 'assets/images/circle-dashed.png' | relative_url }}" alt="Close menu">
-    <img class="close-icon" src="{{ 'assets/images/cross_icon.png' | relative_url }}" alt="Close menu">
-  </div>
-  {% include menu.html %}
-</div>
+{% include menu-modal.html %}
 {% include footer.html %}

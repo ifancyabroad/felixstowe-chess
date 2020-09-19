@@ -7,17 +7,23 @@
   top: 0;
   height: 100vh;
   width: 100vw;
-  padding-top: 128px;
-  padding-bottom: 128px;
 
   .close-menu {
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    width: 100px;
     cursor: pointer;
     z-index: 1;
     transition: 0.2s;
+
+    &.sm {
+      position: relative;
+      width: 51px;
+    }
+
+    &.lg {
+      position: absolute;
+      top: 10%;
+      right: 10%;
+      width: 100px;
+    }
 
     .close-icon {
       position: absolute;
@@ -29,5 +35,17 @@
 
   .close-menu:hover {
     transform: scale(1.2);
+  }
+
+  .large-link {
+    font-size: $h3-font-size;
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  .menu-modal {
+    padding-top: 128px;
+    padding-bottom: 128px;  
   }
 }

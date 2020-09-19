@@ -1,13 +1,22 @@
 <div id="menu" class="container">
   <div class="row justify-content-center">
-    <div class="col-md-5 d-none d-md-block">
+    <div class="col-10 col-md-5 {% if include.type == 'footer' %}d-none d-md-block{% endif %}">
       <ul>
         {% for item in site.data.navigation %}
-          <li class="mb-5"><a class="text-secondary transition" href="{{ item.link | relative_url }}"><h3>{{ item.name }}</h3></a></li>
+          <li class="mb-5">
+            <a class="text-secondary transition" href="{{ item.link | relative_url }}">
+              <h3 class="large-link">{{ item.name }}</h3>
+            </a>
+          </li>
         {% endfor %}
       </ul>
+      {% if include.type == 'modal' %}
+        <a class="d-md-none" href="https://en-gb.facebook.com/pg/Felixstowechessclub/about/" target="_blank">
+          <img src="{{ 'assets/images/facebook_logo.png' | relative_url }}" alt="Facebook" width="62">
+        </a>
+      {% endif %}
     </div>
-    <div class="col-10 col-md-7">
+    <div class="col-10 col-md-7 {% if include.type == 'modal' %}d-none d-md-block{% endif %}">
       <h4 class="mb-3">GET IN TOUCH</h4>
       <div class="d-flex mb-4">
         <div class="mr-5">
@@ -29,7 +38,9 @@
       </div>
 
       <h4 class="mb-3">SOCIAL</h4>
-
+      <a href="https://en-gb.facebook.com/pg/Felixstowechessclub/about/" target="_blank">
+        <img src="{{ 'assets/images/facebook_logo.png' | relative_url }}" alt="Facebook" width="41">
+      </a>
     </div>
   </div>
 </div>
