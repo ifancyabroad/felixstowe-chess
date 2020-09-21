@@ -3,9 +3,12 @@
     <div class="col-10 col-md-5 {% if include.type == 'footer' %}d-none d-md-block{% endif %}">
       <ul>
         {% for item in site.data.navigation %}
-          <li class="mb-5">
-            <a class="text-secondary transition" href="{{ item.link | relative_url }}">
-              <h3 class="large-link">{{ item.name }}</h3>
+          <li class="mb-4">
+            <a class="menu-link text-secondary transition" href="{{ item.link | relative_url }}">
+              <h3 class="large-link mb-0">{{ item.name }}</h3>
+              <div class="menu-divider">
+                <img class="img-fluid" src="{{ 'assets/images/divider_light.png' | relative_url }}" alt="Divider">
+              </div>
             </a>
           </li>
         {% endfor %}

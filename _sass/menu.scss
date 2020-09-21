@@ -1,3 +1,11 @@
+.menu-divider {
+  visibility: hidden;
+}
+
+.menu-link:hover .menu-divider {
+  visibility: visible;
+}
+
 .menu-modal {
   display: none;
   background-color: $primary;
