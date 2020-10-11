@@ -2,8 +2,12 @@
   visibility: hidden;
 }
 
-.menu-link:hover .menu-divider {
-  visibility: visible;
+a.menu-link:hover {
+  color: inherit!important;
+
+  .menu-divider {
+    visibility: visible;
+  }
 }
 
 .menu-modal {
