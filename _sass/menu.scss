@@ -20,33 +20,13 @@ a.menu-link:hover {
   height: 100vh;
   width: 100vw;
 
-  .close-menu {
-    cursor: pointer;
-    z-index: 1;
-    transition: 0.2s;
-
-    &.sm {
-      position: relative;
-      width: 51px;
-    }
+  .close-button {
 
     &.lg {
       position: absolute;
       top: 10%;
       right: 10%;
-      width: 100px;
     }
-
-    .close-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
-
-  .close-menu:hover {
-    transform: scale(1.2);
   }
 
   .large-link {

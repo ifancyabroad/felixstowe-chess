@@ -6,7 +6,8 @@ $(document).ready(() => {
   const menu = $('.menu-modal');
   const menuBtnContainer = $('.menu-btn-container');
   const menuBtn = $('.menu-btn');
-  const menuCloseBtn = $('.close-menu');
+  const menuCloseBtnMobile = $('#close-menu-mobile');
+  const menuCloseBtn = $('#close-menu');
   let menuOpen = false;
 
   const openMenu = (time = 400) => {
@@ -30,7 +31,20 @@ $(document).ready(() => {
   }
 
   menuBtnContainer.on('click', openMenu);
+  menuCloseBtnMobile.on('click', closeMenu);
   menuCloseBtn.on('click', closeMenu);
+
+  // Message banner
+  const messageBanner = $('#message-banner');
+  const messageBannerCloseBtnMobile = $('#close-message-banner-mobile');
+  const messageBannerCloseBtn = $('#close-message-banner');
+
+  const closeMessageBanner = (time = 400) => {
+    messageBanner.fadeOut(time);
+  }
+
+  messageBannerCloseBtnMobile.on('click', closeMessageBanner);
+  messageBannerCloseBtn.on('click', closeMessageBanner);
 
   // Fade scroll to anchor links
   const links = $('a.transition');

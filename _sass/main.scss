@@ -17,3 +17,33 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+.close-button {
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.2s;
+  position: relative;
+
+  &.sm {
+    width: 51px;
+
+    .close-icon {
+      width: 10px;
+    }
+  }
+
+  &.lg {
+    width: 100px;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}

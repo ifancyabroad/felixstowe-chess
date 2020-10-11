@@ -1,0 +1,16 @@
+.message-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    .close-button {
+
+        &.sm {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+        }
+    }
+}
