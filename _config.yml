@@ -29,7 +29,8 @@ github_username:  jekyll
 
 # Build settings
 theme: null
-style: compressed
+sass: 
+  style: compressed
 plugins:
   - jekyll-feed
 
