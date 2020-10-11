@@ -13,6 +13,11 @@
       width: 25%;
     }
   }
+
+  .made-by {
+    width: 200px;
+    margin-left: auto;
+  }
 }
 
 @include media-breakpoint-only(xs) {
